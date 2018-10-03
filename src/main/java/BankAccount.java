@@ -19,6 +19,38 @@ public class BankAccount {
         WORKPLACE
     }
 
+    public double getAccountBalance() {
+        return accountBalance;
+    }
+
+    public void setAccountBalance(double accountBalance) {
+        this.accountBalance = accountBalance;
+    }
+
+    public String getOwnerName() {
+        return ownerName;
+    }
+
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
+    }
+
+    public double getInterestEarned() {
+        return interestEarned;
+    }
+
+    public void setInterestEarned(double interestEarned) {
+        this.interestEarned = interestEarned;
+    }
+
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(int accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
     private int accountNumber;
     public BankAccountType accountType;
     private double accountBalance;
@@ -27,9 +59,8 @@ public class BankAccount {
     private double interestEarned;
 
     public BankAccount(final String name, final BankAccountType accountCategory) {
-        /*
-         * Implement this function
-         */
+        ownerName = name;
+        accountType = accountCategory;
     }
 
     /*
